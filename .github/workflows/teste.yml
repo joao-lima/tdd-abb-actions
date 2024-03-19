@@ -8,10 +8,10 @@ on:
 
 jobs:
   build:
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v3
       - name: compila
-      run: g++ -Wall -std=c++11 arvore.cpp
+        run: g++ -Wall -std=c++11 arvore.cpp
       - name: roda
-      run: ./a.out
+        run: ./a.out
