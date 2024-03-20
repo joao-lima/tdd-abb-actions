@@ -5,8 +5,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-#  workflow_dispatch:
-#    branches: [  $default-branch  ]
+  workflow_dispatch:
+    branches: [ master ]
 
 jobs:
   build:
@@ -16,4 +16,4 @@ jobs:
     - name: compila
       run: g++ -Wall -std=c++11 arvore.cpp
     - name: roda
-      run: ./a.out
+      run: ./a.out --reporter compact --success
